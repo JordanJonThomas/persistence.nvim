@@ -10,7 +10,7 @@ local defaults = {
 }
 
 ---@type Persistence.Config
-M.options = {}
+M.options = defaults
 
 function M.setup(opts)
   M.options = vim.tbl_deep_extend("force", {}, defaults, opts or {})
